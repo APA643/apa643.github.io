@@ -1,17 +1,63 @@
-<div class="container">
-        <div class="row">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parker Hunt, Ph.D. Candidate - Academic Portfolio</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f8f9fa; }
+        .section-title { border-bottom: 2px solid #0d6efd; padding-bottom: 5px; margin-bottom: 20px; color: #2c3e50; }
+        .resume-section { background: white; padding: 30px; border-radius: 8px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        header { background-color: #2c3e50; color: white; padding: 50px 0; }
+        header a { color: #82c0cc; text-decoration: none; }
+        header a:hover { color: #ffffff; text-decoration: underline; }
+        .profile-img { width: 160px; height: 160px; object-fit: cover; border: 4px solid #82c0cc; }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Hero Section -->
+    <header class="text-center mb-5">
+        <div class="container">
+            <!-- Profile Photo -->
+            <img src="profileImage.img.jfif" alt="Parker Hunt" class="rounded-circle profile-img mb-3">
             
-            <!-- Left Column: Main Content -->
-            <div class="col-lg-8">
+            <h1 class="display-4 fw-bold">Parker Hunt</h1>
+            <p class="lead">Ph.D. Candidate | Specialized in Atmospheric Dynamics</p>
+            
+            <!-- Contact & Social Links -->
+            <div class="d-flex justify-content-center align-items-center flex-wrap gap-4 mt-3">
+                <a href="mailto:huntpb@bc.edu"><i class="fas fa-envelope me-1"></i> huntpb@bc.edu</a>
+                <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github me-1"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/parker-hunt-09a329170/" target="_blank"><i class="fab fa-linkedin me-1"></i> LinkedIn</a>
+            </div>
+
+            <!-- CV Download Button -->
+            <div class="mt-4">
+                <a href="hunt.CV.pdf" target="_blank" class="btn btn-outline-light btn-lg shadow-sm">
+                    <i class="fas fa-file-pdf me-2"></i> CV (PDF)
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Single Column Layout -->
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
                 
                 <!-- About Me Section -->
                 <section class="resume-section" id="about">
                     <h3 class="section-title"><i class="fas fa-user-circle me-2"></i>About Me</h3>
                     <p>
-                        I am a Ph.D. candidate in Physics at Boston College and a graduate researcher in the Schiller Institute for Integrated Science and Society, where my advisor is Dr. Yi Ming. My research focuses on atmospheric dynamics and idealized climate modeling, with an emphasis on how tropical divergent circulations—such as the Hadley and Walker cells—respond to zonally asymmetric thermal forcings and elevated CO<sub>2</sub> concentrations. To isolate the fundamental physical mechanisms governing these atmospheric responses, I utilize a combination of idealized moist general circulation models (GCMs), diagnostic physical frameworks, CMIP6 model ensembles, and reanalysis data (ERA5) on high-performance computing clusters.
+                        I am a Ph.D. candidate in Physics at Boston College and a graduate researcher at the Schiller Institute for Integrated Science and Society, advised by Dr. Yi Ming. My research is deeply grounded in using fundamental mathematical and physical laws to understand the governing mechanisms of tropical divergent circulations, specifically the Hadley and Walker cells. To systematically test these foundational controls, I introduce three distinct perturbations within idealized moist general circulation models (GCMs): zonally asymmetric (ZA) thermal forcings of varying magnitudes, ZA forcings of varying length scales, and elevated CO<sub>2</sub> concentrations. By pairing these idealized simulations with diagnostic frameworks derived from physical principles, I isolate the core dynamics driving the atmospheric response. I further investigate and validate these theoretical insights using CMIP6 model ensembles and ERA5 reanalysis data.
                     </p>
                     <p>
-                        I earned my B.S. in Physics with a minor in Mathematics in 2020 from The Ohio State University (<em>Magna Cum Laude</em>, with Research Distinction in Physics). My broader background spans several areas of theoretical and computational physics: at OSU, I conducted research on non-linear dynamical systems and stochastic PDEs with Dr. Ciriyam Jayaprakash, physics education research with Dr. Andrew Heckler and Dr. Gregory Kilcup, and experimental 2D materials with Dr. Jay Gupta. Before joining Dr. Ming’s group, I also worked on non-Hermitian second-quantized systems in theoretical condensed matter physics with Dr. Benedetta Flebus at Boston College.
+                        I earned my B.S. in Physics with a minor in Mathematics in 2020 from The Ohio State University (<em>Magna Cum Laude</em>, with Research Distinction in Physics). My broader background spans several areas of theoretical and computational physics. At OSU, I conducted research on non-linear dynamical systems and stochastic PDEs with Dr. Ciriyam Jayaprakash, physics education research with Dr. Andrew Heckler and Dr. Gregory Kilcup, and experimental 2D materials with Dr. Jay Gupta. Before joining Dr. Ming’s group, I also worked on non-Hermitian second-quantized systems in theoretical condensed matter physics with Dr. Benedetta Flebus at Boston College. I aim to apply this rigorous physics background to investigate fundamental problems within the atmospheric system, with a particular interest in extreme events, wave-mean-flow interactions, and other non-linear phenomena.
                     </p>
                 </section>
 
@@ -37,46 +83,34 @@
                     </ul>
                 </section>
 
-            </div>
+                <!-- Presentations -->
+                <section class="resume-section" id="presentations">
+                    <h3 class="section-title"><i class="fas fa-chalkboard-teacher me-2"></i>Presentations & Seminars</h3>
+                    
+                    <h5 class="fw-bold mb-3 text-secondary">Conference Presentations</h5>
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-3">
+                            <strong>Hunt, P.</strong>, Kim, S., MacDonald, C. G., & Ming, Y. (2025). "Convective reorganization under different zonally-asymmetric thermal forcings and CO<sub>2</sub> concentrations in an idealized model." <em>AGU Fall Meeting</em>, New Orleans, LA.
+                        </li>
+                        <li class="mb-3">
+                            <strong>Hunt, P.</strong>, Kim, S., & Ming, Y. (2025). "Hadley circulation under different zonally-asymmetric thermal forcings and CO<sub>2</sub> concentrations in an idealized model." <em>Gordon Research Conference (GRC)</em>, Lewiston, ME.
+                        </li>
+                        <li class="mb-3">
+                            <strong>Hunt, P.</strong>, Kim, S., & Ming, Y. (2024). "Interconnectivity of tropical circulation patterns." <em>ERDEC Conference</em>, Chestnut Hill, MA.
+                        </li>
+                    </ul>
 
-            <!-- Right Column: Sidebar -->
-            <div class="col-lg-4">
-                
-                <!-- Education -->
-                <section class="resume-section" id="education">
-                    <h3 class="section-title"><i class="fas fa-university me-2"></i>Education</h3>
-                    
-                    <div class="mb-3">
-                        <h6 class="fw-bold mb-0">Ph.D. Candidate in Physics</h6>
-                        <div class="text-muted small">Boston College</div>
-                        <div class="text-muted small">Expected May 2027</div>
-                    </div>
-                    
-                    <div class="mb-3">
-                        <h6 class="fw-bold mb-0">B.S. in Physics</h6>
-                        <div class="text-muted small">The Ohio State University</div>
-                        <div class="text-muted small">May 2020</div>
-                    </div>
+                    <h5 class="fw-bold mb-3 text-secondary">Departmental Seminars</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <strong>Hunt, P.</strong>, Pu, L., Kim, S., MacDonald, C. G., & Ming, Y. (2026). "Convective Reorganization." <em>Department of Earth and Environmental Sciences Seminar</em>, Boston College.
+                        </li>
+                        <li class="mb-3">
+                            <strong>Hunt, P.</strong> (2026). "Topological Origins of Equatorial Waves." <em>Department of Physics Seminar</em>, Boston College.
+                        </li>
+                    </ul>
                 </section>
 
-                <!-- Technical Skills -->
-                <section class="resume-section" id="skills">
-                    <h3 class="section-title"><i class="fas fa-tools me-2"></i>Technical Skills</h3>
-                    <div class="mb-3">
-                        <h6 class="fw-bold">Numerical Modeling & Dynamics</h6>
-                        <span class="badge bg-secondary">Atmospheric Dynamics</span>
-                        <span class="badge bg-secondary">HPC Systems</span>
-                        <span class="badge bg-secondary">Idealized Climate Modeling</span>
-                    </div>
-                    <div class="mb-3">
-                        <h6 class="fw-bold">Programming Languages</h6>
-                        <span class="badge bg-secondary">Python</span>
-                        <span class="badge bg-secondary">Fortran</span>
-                        <span class="badge bg-secondary">C++</span>
-                        <span class="badge bg-secondary">Mathematica</span>
-                    </div>
-                </section>
-                
             </div>
         </div>
     </div>

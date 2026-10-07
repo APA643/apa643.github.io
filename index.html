@@ -12,33 +12,35 @@
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f8f9fa; }
         .section-title { border-bottom: 2px solid #0d6efd; padding-bottom: 5px; margin-bottom: 20px; color: #2c3e50; }
         .resume-section { background: white; padding: 30px; border-radius: 8px; margin-bottom: 30px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
-        header { background-color: #2c3e50; color: white; padding: 50px 0; }
+        /* Reduced padding from 50px to 30px */
+        header { background-color: #2c3e50; color: white; padding: 30px 0; }
         header a { color: #82c0cc; text-decoration: none; }
         header a:hover { color: #ffffff; text-decoration: underline; }
-        .profile-img { width: 160px; height: 160px; object-fit: cover; border: 4px solid #82c0cc; }
+        /* Reduced image size from 160px to 120px */
+        .profile-img { width: 120px; height: 120px; object-fit: cover; border: 4px solid #82c0cc; }
     </style>
 </head>
 <body>
 
-    <!-- Header / Hero Section -->
-    <header class="text-center mb-5">
+    <!-- Header / Hero Section (Reduced bottom margin) -->
+    <header class="text-center mb-4">
         <div class="container">
             <!-- Profile Photo -->
-            <img src="profileImage.img.jfif" alt="Parker Hunt" class="rounded-circle profile-img mb-3">
+            <img src="profileImage.img.jfif" alt="Parker Hunt" class="rounded-circle profile-img mb-2">
             
-            <h1 class="display-4 fw-bold">Parker Hunt</h1>
-            <p class="lead">Ph.D. Candidate | Specialized in Atmospheric Dynamics</p>
+            <!-- Slightly smaller name text (display-5 instead of display-4) -->
+            <h1 class="display-5 fw-bold mb-1">Parker Hunt</h1>
+            <p class="lead mb-2">Ph.D. Candidate | Specialized in Atmospheric Dynamics</p>
             
-            <!-- Contact & Social Links -->
-            <div class="d-flex justify-content-center align-items-center flex-wrap gap-4 mt-3">
+            <!-- Contact & Social Links (GitHub removed) -->
+            <div class="d-flex justify-content-center align-items-center flex-wrap gap-4 mt-2">
                 <a href="mailto:huntpb@bc.edu"><i class="fas fa-envelope me-1"></i> huntpb@bc.edu</a>
-                <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github me-1"></i> GitHub</a>
                 <a href="https://www.linkedin.com/in/parker-hunt-09a329170/" target="_blank"><i class="fab fa-linkedin me-1"></i> LinkedIn</a>
             </div>
 
             <!-- CV Download Button -->
-            <div class="mt-4">
-                <a href="hunt.CV.pdf" target="_blank" class="btn btn-outline-light btn-lg shadow-sm">
+            <div class="mt-3">
+                <a href="hunt.CV.pdf" target="_blank" class="btn btn-outline-light shadow-sm">
                     <i class="fas fa-file-pdf me-2"></i> CV (PDF)
                 </a>
             </div>
@@ -96,23 +98,4 @@
                             <strong>Hunt, P.</strong>, Kim, S., & Ming, Y. (2025). "Hadley circulation under different zonally-asymmetric thermal forcings and CO<sub>2</sub> concentrations in an idealized model." <em>Gordon Research Conference (GRC)</em>, Lewiston, ME.
                         </li>
                         <li class="mb-3">
-                            <strong>Hunt, P.</strong>, Kim, S., & Ming, Y. (2024). "Interconnectivity of tropical circulation patterns." <em>ERDEC Conference</em>, Chestnut Hill, MA.
-                        </li>
-                    </ul>
-
-                    <h5 class="fw-bold mb-3 text-secondary">Departmental Seminars</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-3">
-                            <strong>Hunt, P.</strong>, Pu, L., Kim, S., MacDonald, C. G., & Ming, Y. (2026). "Convective Reorganization." <em>Department of Earth and Environmental Sciences Seminar</em>, Boston College.
-                        </li>
-                        <li class="mb-3">
-                            <strong>Hunt, P.</strong> (2026). "Topological Origins of Equatorial Waves." <em>Department of Physics Seminar</em>, Boston College.
-                        </li>
-                    </ul>
-                </section>
-
-            </div>
-        </div>
-    </div>
-</body>
-</html>
+                            <strong>Hunt, P.</strong>, Kim, S
